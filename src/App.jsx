@@ -14,7 +14,7 @@ function App() {
   const[section , setSection] = useState(0);
   const [menuOpend,setmenuOpend] = useState(false);
   const [started, setStarted] = useState(false);
-
+  const isMobile = window.innerWidth < 768;
 
   
   useEffect(()=>{
@@ -54,8 +54,10 @@ function App() {
     setSection={setSection} 
     menuOpend={menuOpend} 
     setmenuOpend={setmenuOpend}/>
-
-   <Cursor/>
+   {
+    !isMobile ? <Cursor/> :<></>
+   }
+   
 
     </MotionConfig>
     <Leva hidden/>

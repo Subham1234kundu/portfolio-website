@@ -81,8 +81,7 @@ const EmailFrom = () => {
             <motion.mesh 
             ref={planeRef} 
             scale={[6,6,6]}
-            animate={{ rotateY: [0, 360] }}
-            transition={{ duration: 5, loop: Infinity }}
+            transition={{ duration: 5.4, loop: Infinity }}
             >
             <boxGeometry attach="geometry" args={[15, 20,20,2,20,20,2,3]}  />
             <meshBasicMaterial name="material" wireframe map={texture} side={THREE.DoubleSide}>

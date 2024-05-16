@@ -20,7 +20,7 @@ export const projects = [
     },
     {
         title:"Baked Portfolio",
-        url:"",
+        url:"https://subhamkundu.vercel.app/",
         image:"Images/Portfollio.png",
         description:"Yep this is my website . thanks to visit my site"
     },

@@ -119,15 +119,15 @@ const AboutSection = ({setSection})=>{
         level:80
     },
     {
-        title:"CSS,tailwindCss",
+        title:"CSS,TailwindCSS",
         level:70
     },
     {
-        title:"NodeJs",
+        title:"NodeJS,Express JS",
         level:70
     },
     {
-        title:"3D Modeling",
+        title:"3D Modeling,GSAP,Framer Motion",
         level:20
     }
  ]
