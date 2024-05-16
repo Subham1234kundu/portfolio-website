@@ -1,6 +1,10 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
 import emailjs from '@emailjs/browser';
 import { FaHandshake } from "react-icons/fa6";
+import {motion} from "framer-motion-3d";
+import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import * as THREE from 'three';
+
 
 const EmailFrom = () => {
     const [name , setName ] = useState("");
@@ -8,7 +12,8 @@ const EmailFrom = () => {
     const [message, setMessage] = useState("");
     const [succeeded, setSucceeded] = useState(false);
     const [validError,setValidError] = useState("can't send an empty message");
-
+    const planeRef = useRef();
+    const texture = useLoader(THREE.TextureLoader,"/Images/beserk.jpeg");
     const handleButtonClick = () => {
         // Check if name and email are not empty when the button is clicked
         if (!name.trim() ) {
@@ -55,6 +60,14 @@ const EmailFrom = () => {
         
     }
 
+    useFrame(() => {
+        if (planeRef.current) {
+          planeRef.current.rotation.y += 0.005; 
+          planeRef.current.rotation.x += 0.003; 
+          
+        }
+      });
+
 
   return (
     <>
@@ -62,7 +75,25 @@ const EmailFrom = () => {
         <div className="mt-8 p-8 rounded-md bg-gray-700 w-96 max-w-full bg-opacity-50">
 
         {
-            succeeded ?<div className="flex gap-4"><img src="/Images/my_logo.png" className="w-10" alt="" /><p className="text-gray-200 font-bold text-xl">Thanks for your message<FaHandshake className="text-4xl"/></p> </div>:(
+            succeeded ?<div className="flex gap-4">
+            <Canvas>
+                
+            <motion.mesh 
+            ref={planeRef} 
+            scale={[6,6,6]}
+            animate={{ rotateY: [0, 360] }}
+            transition={{ duration: 5, loop: Infinity }}
+            >
+            <boxGeometry attach="geometry" args={[15, 20,20,2,20,20,2,3]}  />
+            <meshBasicMaterial name="material" wireframe map={texture} side={THREE.DoubleSide}>
+              
+                
+            </meshBasicMaterial>
+            <ambientLight intensity={1}/>
+            </motion.mesh>
+            </Canvas>
+
+                <p className="text-gray-200 font-bold text-xl">Thanks for your message<FaHandshake className="text-4xl"/></p> </div>:(
                 <form onSubmit={handleSubmit}>
 
 

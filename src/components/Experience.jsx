@@ -6,7 +6,6 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { animate, useMotionValue } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { framerMotionConfig } from "../helpers/config.js";
-import * as THREE from 'three';
 import Projects from "./Projects.jsx";
 import {Background} from "./Background.jsx";
 
