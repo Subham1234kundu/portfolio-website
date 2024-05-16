@@ -9,7 +9,7 @@ export const projects = [
     {
         title:"Linkedin Clone",
         url:"https://linked-in-clone-wui1.vercel.app/",
-        image:"/public/Images/Linkedin Clone.png",
+        image:"/Images/Linkedin Clone.png",
         description:"Recomended: join now at 1st then u sign in with google"
     },
     {
