@@ -71,7 +71,7 @@ const EmailFrom = () => {
 
   return (
     <>
-              <h1  className="text-3xl md:text-5xl text-gray-400 font-bold">Contract me</h1>
+              <h1  className="text-3xl md:text-5xl text-gray-400 font-bold">Contact me</h1>
         <div className="mt-8 p-8 rounded-md bg-gray-700 w-96 max-w-full bg-opacity-50">
 
         {

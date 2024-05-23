@@ -28,7 +28,7 @@ const Menu = ({setSection,menuOpend,setmenuOpend}) => {
             <MenuButton  label="About" onClick={()=>setSection(0)}/>
             <MenuButton label="Skills" onClick={()=>setSection(1)}/>
             <MenuButton label="Projects" onClick={()=>setSection(2)}/>
-            <MenuButton label="Contract" onClick={()=>setSection(4)}/>
+            <MenuButton label="Contact" onClick={()=>setSection(4)}/>
         </div>
       </div>
     </>

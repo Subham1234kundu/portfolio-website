@@ -77,7 +77,7 @@ const AboutSection = ({setSection})=>{
             }}
          >I am a frontend developer
          <br />
-         also a 3D modeling artist
+         also a 3D web developer
          </motion.p>
          <motion.button
          onClick={()=> setSection(3)}
@@ -94,7 +94,7 @@ const AboutSection = ({setSection})=>{
             duration:1,
             delay:2
           }}
-          >Contract me</motion.button>
+          >Contact me</motion.button>
 
      </Section>
 
