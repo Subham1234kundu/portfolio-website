@@ -13,7 +13,7 @@ export const projects = [
         description:"Recomended: join now at 1st then u sign in with google"
     },
     {
-        title:"GAME-FIRE",
+        title:"SEAHORSE-SOOTER",
         url:"https://fire-fish-game.vercel.app/",
         image:"Images/GAME-FIRE.png",
         description:"Only for pc . use arrow key for up down and space for fire if you touch the golden fish your super power mode is activate currently"
