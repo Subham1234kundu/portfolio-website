@@ -13,6 +13,12 @@ export const projects = [
         description:"Recomended: join now at 1st then u sign in with google"
     },
     {
+        title:"Resume-Crusher",
+        url:"https://resume-builder-six-sigma.vercel.app/",
+        image:"/public/Images/Resume-Crusher.png",
+        description:"Crush your own resume in Resume-Crusher"
+    },
+    {
         title:"SEAHORSE-SOOTER",
         url:"https://fire-fish-game.vercel.app/",
         image:"Images/GAME-FIRE.png",
