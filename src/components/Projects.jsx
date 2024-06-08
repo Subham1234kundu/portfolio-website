@@ -15,7 +15,7 @@ export const projects = [
     {
         title:"Resume-Crusher",
         url:"https://resume-builder-six-sigma.vercel.app/",
-        image:"/public/Images/Resume-Crusher.png",
+        image:"Images/Resume-Crusher.png",
         description:"Crush your own resume in Resume-Crusher"
     },
     {
