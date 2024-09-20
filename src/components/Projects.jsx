@@ -31,6 +31,12 @@ export const projects = [
         description:"Yep this is my website . thanks to visit my site"
     },
     {
+        title:"PIZZANATIVE(APP)",
+        url:"https://github.com/Subham1234kundu/PIZZA-ORDERING-APP",
+        image:"Images/PIZZACUT.jpg",
+        description:"Its a native app with user auth,payment,admin,user portal"
+    },
+    {
         title:"3D-Shirt-Customizer",
         url:"https://snazzy-cranachan-48b356.netlify.app/",
         image:"Images/ShirtCustomizer.png",
@@ -38,10 +44,10 @@ export const projects = [
     },
     {
         title:"COOMING-SOON...",
-        url:"",
+        url:"https://github.com/Subham1234kundu?tab=repositories",
         image:"https://images.unsplash.com/photo-1714880776087-f8c0430817a6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:"wait for upcoming projects......"
-    }
+    },
 ];
 
 const Project = ({project,highlighted}) =>{
