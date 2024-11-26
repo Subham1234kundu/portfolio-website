@@ -103,7 +103,7 @@ const AboutSection = ({setSection})=>{
 
  const skills = [
     {
-        title:"Threejs / React Three Fiber",
+        title:"Threejs | React Three Fiber",
         level:50
     },
     {
@@ -111,15 +111,23 @@ const AboutSection = ({setSection})=>{
         level:80
     },
     {
+        title:"React-Native",
+        level:55
+    },
+    {
         title:"Java Script",
-        level:70
+        level:75
+    },
+    {
+        title:"TypeScript",
+        level:75 
     },
     {
         title:"HTML5",
         level:80
     },
     {
-        title:"CSS,TailwindCSS",
+        title:"CSS3,TailwindCSS",
         level:70
     },
     {
@@ -127,8 +135,12 @@ const AboutSection = ({setSection})=>{
         level:70
     },
     {
-        title:"3D Modeling,GSAP,Framer Motion",
-        level:20
+        title:"GSAP,Framer Motion",
+        level:60
+    },
+    {
+        title:"Java",
+        level:30
     }
  ]
 
@@ -221,6 +233,19 @@ const AboutSection = ({setSection})=>{
         <Section>
             <EmailFrom />
             <footer className="flex m-5">
+                
+            <div className="relative group">
+                <a
+                    href="https://drive.google.com/file/d/17Q6-DLqQvr-_pKM3c0YC14-THIQNZcYa/view?usp=sharing"
+                >
+                    <img src="/Images/cv.png" alt="Resume" className="cursor-pointer w-10 h-8 mr-4 transition duration-300 ease-in-out transform group-hover:grayscale" />
+                </a>
+                <div
+                    className="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                    <p className="p-2">Click to view my resume</p>
+                </div>
+            </div>
             <a href="https://www.linkedin.com/in/subham-kundu-a06bb2260/">
             <PiLinkedinLogo  className="text-gray-400 text-3xl mr-4 cursor-pointer "/>
             </a>
@@ -232,13 +257,12 @@ const AboutSection = ({setSection})=>{
             <BiLogoInstagramAlt className="text-gray-400 text-3xl mr-4 cursor-pointer "/>
             </a>
 
-            <a href="https://www.facebook.com/subham.kundu.92317121/">
-            <FaFacebookSquare className="text-gray-400 text-3xl mr-4 cursor-pointer"/>
-            </a>
+    
 
             <a href="https://wa.me/917863983914">
             <FaWhatsappSquare  className="text-gray-400 text-3xl mr-4 cursor-pointer"/>
             </a>
+
 
             </footer>
             

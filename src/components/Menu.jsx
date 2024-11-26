@@ -29,6 +29,7 @@ const Menu = ({setSection,menuOpend,setmenuOpend}) => {
             <MenuButton label="Skills" onClick={()=>setSection(1)}/>
             <MenuButton label="Projects" onClick={()=>setSection(2)}/>
             <MenuButton label="Contact" onClick={()=>setSection(4)}/>
+            <a className={"text-2xl underline font-bold cursor-pointer hover:text-gray-500 text-indigo-600 transition-colors"} href="https://drive.google.com/file/d/17Q6-DLqQvr-_pKM3c0YC14-THIQNZcYa/view?usp=sharing ">Resume</a>
         </div>
       </div>
     </>
